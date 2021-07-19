@@ -1,0 +1,56 @@
+.card {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2021;
+}
+
+.card__button-delete {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  font-size: 24px;
+  color: #74767c;
+  transform: rotate(45deg);
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+.card__id-block {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.card__id {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.card__id_name {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.card__id_number {
+  color: #74767c;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: normal;
+  color: #74767c;
+  margin: 10px 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+}

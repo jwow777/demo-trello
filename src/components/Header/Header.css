@@ -1,0 +1,19 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+.header__logout {
+  height: 30px;
+  background-color: #616161;
+  font-size: 14px;
+  color: #bcbdc0;
+  cursor: pointer;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  user-select: none;
+}

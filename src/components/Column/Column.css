@@ -1,0 +1,123 @@
+.column {
+  height: max-content;
+  background-color: #2f3137;
+}
+
+.column__title-block {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 23px;
+}
+
+.column__title-block_on-hold {
+  background-color: #f78b4d;
+}
+
+.column__title-block_in-progress {
+  background-color: #3b8bba;
+}
+
+.column__title-block_needs-review {
+  background-color: #f4c957;
+}
+
+.column__title-block_approved {
+  background-color: #4aa469;
+}
+
+.column__title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.column__cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.column__button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+.column__button_add {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #2f3137;
+  font-size: 14px;
+  color: #74767c;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.column__button_add:hover {
+  background-color: #26282c;
+}
+
+.column__button_add::before {
+  content: '+';
+  font-size: 28px;
+  line-height: 1;
+}
+
+.column__form {
+  display: grid;
+  grid-template-columns: auto max-content;
+  gap: 15px 10px;
+  box-sizing: border-box;
+  padding: 0 10px 15px;
+}
+
+.column__textarea {
+  grid-column: 1/3;
+  width: 100%;
+  height: 100px;
+  background-color: #505050;
+  color: #bcbdc0;
+  box-sizing: border-box;
+  padding: 14px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.column__button_submit {
+  min-width: 130px;
+  height: 30px;
+  background-color: #616161;
+  font-size: 14px;
+  color: #bcbdc0;
+  padding: 0 15px;
+}
+
+.column__button_submit:disabled {
+  background-color: #616161;
+  color: #919191;
+}
+
+.column__button_close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  font-size: 36px;
+  color: #bcbdc0;
+  transform: rotate(45deg);
+  user-select: none;
+}
